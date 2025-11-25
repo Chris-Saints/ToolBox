@@ -1,0 +1,110 @@
+#jogar {
+    margin: 50px;
+    border: solid 1px var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 50px 40px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#jogar:hover {
+    background-color: var(--cor-secundaria);
+    border: solid 1px var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+#jogar:active {
+    background-color: var(--cor-fonte-form);
+}
+
+#novo-jogo {
+    background-color: var(--cor-formulario);
+    color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 1em;
+    border: solid 1px var(--cor-formulario);
+}
+
+#novo-jogo:hover {
+    background-color: var(--cor-secundaria);
+    border: solid 1px var(--cor-formulario);
+    color: var(--cor-formulario);
+}
+
+#novo-jogo:active {
+    background-color: var(--cor-fonte-form);
+}
+
+#novo-jogo:disabled {
+    opacity: 50%;
+}
+
+
+.escondido {
+    display: none;
+}
+
+#div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#div__contador {
+    margin: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    border: solid 2px black;
+    padding: 50px 40px;
+    border-radius: 100%;
+}
+
+#cronometro {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.conteudo__centralizar-horizontal {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.conteudo__recorde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#melhor-recorde{
+    font-size: 60px;
+}
+
+
+.conteudo__conquistas-lista{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    gap: 20px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.brilho {
+    color: white;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.6), rgba(0, 150, 255, 0.4));
+    padding: 10px;
+    border-radius: 1em;
+}
+
+
+.conquista__lista-item{
+    display: flex;
+}

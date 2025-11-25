@@ -1,0 +1,86 @@
+.espaco-quadrado {
+    padding: 100px;
+}
+
+.imagem-modificada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__modificadores {
+    display: flex;
+}
+
+.imagem-modificada {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    filter: brightness(1);
+    opacity: 1;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    border: solid 0 #000000;
+    border-radius: 0%;
+    transform: scale(1);
+    filter: saturate(100%) contrast(100%);
+    transform: skewX(0deg);
+    transform: skewY(0deg);
+}
+
+
+button {
+    border: None;
+    width: 50px;
+    height: 50px;
+}
+
+button:active {
+    filter: saturate(50%);
+    transition: filter 0.3s;
+}
+
+.borda{
+    border: 2px solid cyan;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#cinza {
+    background-color: gray;
+}
+
+#preto {
+    background-color: black;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#laranja {
+    background-color: orange;
+}
+
+#branco {
+    background-color: white;
+}
+
+#roxo {
+    background-color: purple;
+}
+
+#rosa {
+    background-color: pink;
+}
+
+#amarelo {
+    background-color: yellow;
+}

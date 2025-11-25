@@ -1,0 +1,52 @@
+section p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+section span{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#gerar-cor{
+    padding: 65px 40px;
+    border: solid 1px var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 100%;
+    color: var(--cor-secundaria);
+}
+
+#gerar-cor:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+#gerar-cor:active{
+    background-color: #b9b9b9;
+}
+
+.div_btn {
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    padding: 30px;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+#display-mensagem {
+    font-size: 20px;
+}

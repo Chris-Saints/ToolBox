@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>ToolBox</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></a>
+    </header>
+    
+    <main class="conteudo">
+
+        <section class="titulo">
+            <div class="titulo__div">
+                <h1 class="titulo__titulo">Toolbox: Central Interativa</h1>
+                <img class="titulo__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox">
+            </div>
+            <p class="titulo__descricao">Um conjunto de ferramentas simples desenvolvidas com HTML, CSS e TypeScript. Este projeto é uma prática interativa para treinar fundamentos do Front-End.</p>
+        </section>
+        
+        <section class="container__descricao_site">
+            <h2 class="container__descricao-titulo">Sobre o Projeto</h2>
+            <p class="container__descricao-paragrafo">Este site foi criado com o objetivo de reunir e praticar conceitos básicos de desenvolvimento Front-End. Cada ferramenta foi feita com HTML, estilizada com CSS e traz lógica implementada com TypeScript.</p>
+            <p class="container__descricao-paragrafo">A navegação é feita por páginas independentes, cada uma contendo uma funcionalidade interativa.</p>
+        </section>
+
+        <section class="container__ferramentas">
+            <h2 class="container__ferramentas-titulo">Ferramentas Disponíveis</h2>
+            <ul class="container__ferramentas-ul">
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="tapgame.html">Jogo do Clique</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="formulario.html">Formulário de Cadastro</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="temas.html">Trocar Tema (Claro/Escuro)</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="tarefas.html">Lista de Tarefas</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="jogocor.html">Jogo das Cores</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="relogio.html">Relógio Digital</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="calculadora.html">Calculadora de Soma</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="fundo.html">Mudar Cor de Fundo</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="editorcss.html">Editor CSS</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="conversor.html">conversor de medida CSS</a></li>
+            </ul>
+        </section>
+
+        <section class="container__ideias">
+            <h2 class="container__ideias-titulo">Nos ajude a melhorar!</h2>
+            <p class="container__ideias-paragrafo">Caso tenha uma ideia de ferramenta para acrescentar no nosso site. Coloque seu nome e sua ideia abaixo!</p>
+
+            <form class="container__ideias-formulario" id="formulario">
+                <label class="container__ideias-input"> Nome: <input class="input-nome" type="text" id="nome" placeholder="Usuario"></label><br>
+                <label for="descricao" class="container__ideias-input-descricao"> Descrição: <textarea id="descricao" class="input-descricao" cols="50" rows="10" wrap="hard" placeholder="Descreva sua ideia"></textarea></label><br>
+                 
+                <button data-tooltip="Clique para enviar" class="container__ideias-botao" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer class="rodape">
+        <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
+        <div class="rodape__links">
+            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
+            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
+            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+        </div>
+    </footer>
+    <script src="./dist/trocar-temas.js"></script>
+</body>
+</html>

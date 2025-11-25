@@ -1,0 +1,75 @@
+@import url("./style.css");
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    top: -35%;
+}
+
+
+
+.formulario__tarefa {
+    position: relative;
+    top: -30%;
+    display: flex;
+    gap: 30px;
+}
+
+.formulario__tarefa-input {
+
+
+    max-width: 300px;
+    width: 100%;
+}
+
+div h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.div__tarefas{
+    display: flex;
+    position: relative;
+    top: -25%;
+    gap: 20px;
+
+}
+
+.div__tarefas__fazer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid 1px black;
+    padding-right: 20px;
+}
+
+.section__feitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul button {
+    border: none;
+    background-color: var(--cor-fundo);
+    border-radius: 40px;
+    padding: 3px 5px;
+
+}
+
+ul button:hover {
+    background-color: #8b8a8a;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}

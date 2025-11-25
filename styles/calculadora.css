@@ -1,0 +1,73 @@
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color:dimgrey;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+}
+
+.display-backspace {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+.display {
+    border: none;
+    background-color: var(--cor-formulario);
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-op {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.btn-opdois {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.btn {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-formulario);
+}
+
+.btn-diferente {
+    background-color: var(--cor-operadores-diferentes);
+    color: var(--cor-fundo-op-dife);
+}
+
+.btn-back {
+    background-color: var(--cor-operadores-diferentes);
+    padding: 25px 30px;
+    border-radius: 10px;
+    color: var(--cor-fundo-op-dife);
+}

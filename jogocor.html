@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/jogocor.css">
+    <title>Toolbox - Trocar Tema</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></a>
+    </header>
+     
+    <main class="conteudo">
+        <section class="container_principal">
+            <p>ACERTE A COR</p>
+            <span id="display-cor"></span>
+                        <div class="div_btn">
+                <button class="btn" id="btnOpUm"></button>
+                <button class="btn" id="btnOpDois"></button>
+                <button class="btn" id="btnOpTres"></button>
+                <button class="btn" id="btnOpQuatro"></button>
+                <button class="btn" id="btnOpCinco"></button>
+            </div>
+            <span id="display-mensagem"></span>
+            <button id="gerar-cor">Nova cor</button>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
+        <div class="rodape__links">
+            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
+            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
+            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script src="./dist/trocar-temas.js"></script>
+    <script src="./dist/jogocor.js"></script>
+</body>
+</html>

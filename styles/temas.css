@@ -1,0 +1,20 @@
+#botao-tema {
+    cursor: pointer;
+    background-color: var(--cor-formulario);
+    border: none;
+    padding: 100px;
+    border-radius: 200px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0);
+}
+
+#botao-tema:hover {
+    opacity: 80%;
+}
+
+#botao-tema:active {
+    background-color: black;
+}
+
+.lampada {
+    width: 100px;
+}

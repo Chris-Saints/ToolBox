@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "ESnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "es2020"],
+    "strict": true,
+    "rootDir": "./ts",        // pasta onde estão seus arquivos .ts
+    "outDir": "./dist",       // pasta onde será gerado o .js
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["ts/**/*.ts"],  // inclui todos os arquivos .ts dentro da pasta ts
+  "exclude": ["node_modules"]
+}

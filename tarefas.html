@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tarefas.css">
+    <title>Toolbox - To-do List</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></a>
+    </header>
+    
+    <main class="conteudo">
+        <h1>Lista de tarefas</h1>
+
+        <form class="formulario__tarefa" id="form-itens">
+            <input class="formulario__tarefa-input" type="text" required placeholder="Adicione um item" id="receber-item">
+            <button class="formulario__tarefa-botao" id="botao" type="button">Salvar</button>
+        </form>
+
+        <div class="div__tarefas">
+            <div class="div__tarefas__fazer">
+                <h2 class="div__tarefas__fazer-titulo">Tarefas</h1>
+                    <ul class="div__tarefas__fazer-lista" id="adicionar-tarefa">
+                    </ul>
+            </div>
+
+            <div class="section__feitos">
+                <h2 class="section__feitos-titulo">Tarefas Feitas</h1>
+                <ul class="section__feitos-lista" id="tarefas-concluidas">
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
+        <div class="rodape__links">
+            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
+            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
+            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script src="./dist/tarefa.js"></script>
+    <script src="./dist/trocar-temas.js"></script>
+</body>
+</html> 

@@ -1,0 +1,91 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    
+}
+
+.conteudo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -1rem;
+    
+}
+
+.container__cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.container__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+
+}
+
+.container_login-input{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+
+.container_login-input input {
+    background-color: var(--cor-fundo);
+    border-radius: 6px;
+    border: solid 2px var(--cor-primaria);
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.container_login-input input::placeholder{
+    color: var(--cor-formulario);
+}
+
+#btn-olhos-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-fonte-form);
+    border: solid 2px var(--cor-fonte-form) ;
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+}
+
+#btn-olhos-login:hover {
+    border: solid 2px var(--cor-fonte-form-hover);
+    background-color: var(--cor-secundaria);
+}
+
+#btn-olhos-login img{
+    width: 20px;
+}
+
+
+
+
+.container_button-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container_button-login button {
+    background-color: var(--cor-botao-form);
+    border: solid 2px var(--cor-botao-form);
+    color: var(--cor-fonte-form);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+

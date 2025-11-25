@@ -1,0 +1,40 @@
+button{
+    padding: 60px 50px;
+    border-radius: 10%;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#botao-fundo{
+    padding: 60px 55px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 1px var(--cor-primaria);
+}
+
+#botao-fundo:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: solid 1px var(--cor-primaria);
+}
+
+#botao-fundo:active {
+    background-color: var(--cor-fonte-form);
+}
+
+#resetar-fundo{
+    border: solid 1px black;
+    background-color: white;
+}
+
+#resetar-fundo:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+}
+
+.div__botoes{
+    display: flex;
+    gap: 30px;
+}

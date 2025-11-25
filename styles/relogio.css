@@ -1,0 +1,19 @@
+.container__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container__botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__temporizador {
+    display: flex;
+}
+
+.esconder-botao {
+    display: none;
+}
