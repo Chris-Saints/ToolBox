@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
@@ -14,75 +14,81 @@
     </header>
     
     <main class="conteudo">
+
+        <h1>EDITOR CSS</h1>
+
+
         <section class="espaco-quadrado">
             <div class="imagem-modificada" id="quadrado"><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></div>
         </section>
 
         <section class="container__modificadores">
+             <div class="container__cores">
+                <button class="box" id="vermelho"></button>
+                <button class="box" id="amarelo"></button>
+                <button class="box" id="azul"></button>
+                <button class="box" id="laranja"></button>
+                <button class="box" id="roxo"></button>
+                <button class="box" id="verde"></button>
+                <button class="box" id="preto"></button>
+                <button class="box" id="branco"></button>
+                <button class="box" id="cinza"></button>
+                <button class="box" id="rosa"></button>
+            </div>
+
             <div class="tooltip">
                 <div id="sombra">
                     <p>Sombra</p>
-                    <input id="slider-sombra" type="range" min="0" max="100" step="10" value="0">
+                    <input class="slider" id="slider-sombra" type="range" min="0" max="100" step="10" value="0">
                 </div>
 
                 <div id="borda">
                     <p>Borda</p>
-                    <input id="slider-borda" type="range" min="0" max="10" step="1" value="0">
+                    <input class="slider" id="slider-borda" type="range" min="0" max="10" step="1" value="0">
                 </div>
 
                 <div id="border-radius">
                     <p>Curva da borda</p>
-                    <input id="slider-border-radius" type="range" min="0" max="50" step="1" value="0">
+                    <input class="slider" id="slider-border-radius" type="range" min="0" max="50" step="1" value="0">
                 </div>
 
                 <div id="scale">
                     <p>Escala</p>
-                    <input id="slider-scale" type="range" min="0.1" max="2.1" step="0.1" value="1.1">
+                    <input class="slider" id="slider-scale" type="range" min="0.1" max="2.1" step="0.1" value="1.1">
                 </div>
 
                 <div id="skewX">
                     <p>Skew X</p>
-                    <input id="slider-skewx" type="range" min="0" max="50" step="1" value="0">
+                    <input class="slider" id="slider-skewx" type="range" min="0" max="50" step="1" value="0">
                 </div>
 
                 <div id="skewY">
                     <p>Skew Y</p>
-                    <input id="slider-skewy" type="range" min="0" max="50" step="1" value="0">
+                    <input class="slider" id="slider-skewy" type="range" min="0" max="50" step="1" value="0">
                 </div>
 
                 <div id="rotacao">
                     <p>Rotação</p>
-                    <input id="slider-rotacao" type="range"  min="0" max="360" step="1" value="0">
+                    <input class="slider" id="slider-rotacao" type="range"  min="0" max="360" step="1" value="0">
                 </div>
 
                 <div id="opacidade">
                     <p>Opacidade</p>
-                    <input id="slider-opacidade" type="range"  min="0" max="1" step="0.1" value="1">
+                    <input class="slider" id="slider-opacidade" type="range"  min="0" max="1" step="0.1" value="1">
                 </div>
 
                 <div id="brilho">
                     <p>Brilho</p>
-                    <input id="slider-brilho" type="range" min="0" max="1" step="0.1" value="1">
+                    <input class="slider" id="slider-brilho" type="range" min="0" max="1" step="0.1" value="1">
                 </div>
 
                 <div id="saturacao">
                     <p>Saturação</p>
-                    <input id="slider-saturacao" type="range" min="0" max="100" step="1" value="100">
+                    <input class="slider" id="slider-saturacao" type="range" min="0" max="100" step="1" value="100">
                 </div>
             </div>
 
-            <div class="container__cores">
-                <button id="vermelho">X</button>
-                <button id="amarelo">X</button>
-                <button id="azul">X</button>
-                <button id="laranja">X</button>
-                <button id="roxo">X</button>
-                <button id="verde">X</button>
-                <button id="preto">X</button>
-                <button id="branco">X</button>
-                <button id="cinza">X</button>
-                <button id="rosa">X</button>
-            </div>
+           
         </section>
     </main>
 

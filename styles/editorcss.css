@@ -1,3 +1,12 @@
+.conteudo {
+    margin-bottom: 1rem;
+}
+
+.conteudo h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .espaco-quadrado {
     padding: 100px;
 }
@@ -10,6 +19,18 @@
 
 .container__modificadores {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 0.5rem;
 }
 
 .imagem-modificada {
@@ -83,4 +104,15 @@ button:active {
 
 #amarelo {
     background-color: yellow;
+}
+
+.box {
+    border: solid 3px black;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.box:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
 }
