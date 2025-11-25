@@ -2,18 +2,178 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2rem;
 }
 
 .container__botoes {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.esconder-botao {
+    display: none;
+} 
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conteudo h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 0.5rem;
+    border: solid 3px var(--cor-botao-form);
+    border-radius: 6px;
+}
+
+#am-pm {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 2px var(--cor-primaria);
+    padding: 0 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    height: 30px;
+}
+
+#am-pm:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.button-options {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 2px var(--cor-primaria);
+    padding: 0 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.button-options:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+#alarmes-definidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    width: 150px;
+}
+
+#alarmes-definidos h2 {
+    font-weight: bold;
+}
+
+#alarmes-definidos p {
+    text-align: center;
+}
+
+#alarmes-definidos div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#alarmes-definidos button{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 2px var(--cor-primaria);
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    height: 30px;
+}
+
+#alarmes-definidos button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+#espaco-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Cronometro */
+
+#display {
+    font-weight: bold;
+}
+
+#espaco-conteudo button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 2px var(--cor-primaria);
+    padding: 0.5rem 1rem 1.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    height: 30px;
+}
+
+#espaco-conteudo button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.container_btn-cronometro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Alarme: */
+
+#espaco-conteudo h2 {
+    font-weight: bold;
+}
+
+.container_alarme-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Temporizador */
+
+#espaco-display{
+    font-weight: bold;
 }
 
 .container__temporizador {
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
 }
 
-.esconder-botao {
-    display: none;
+.container__temporizador input {
+    border: solid 2px var(--cor-botao-form);
+    border-radius: 6px;
+    height: 25px;
 }

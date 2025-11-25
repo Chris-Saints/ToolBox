@@ -6,8 +6,12 @@ const botaoAmPm = document.getElementById("am-pm");
 const diasDaSemana = ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'];
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 //As duas variaveis servem de apoio para converter o numero que vem o Date em Nome dos dias e meses
+
+
 let formatoAmPm = false; //Serve para a troca da versao de 24h para AM/PM e vice e versa
 tempoRolar();
+
+
 //funcao que recupera as informações de data, dia, mes, entre outros
 function atualizarRelogio() {
     const agora = new Date(); //cria uma const com o tipo Date
@@ -50,6 +54,8 @@ botaoAmPm.addEventListener("click", () => {
     atualizarRelogio();
     atualizarListaAlarmes();
 });
+
+
 //ALARME
 //Acessando elementos Html
 const espacoConteudo = document.getElementById("espaco-conteudo");
@@ -65,11 +71,12 @@ let tempoDecorrido = 0; //tempo para contagem progressiva do cronometro
 let alarmesAdicionados = []; //Array onde ficaram os alarmes salvos
 recuperarAlarme();
 atualizarListaAlarmes();
+
 btnAlarme.addEventListener("click", () => {
     //quando o botao do alarme é clicado abre um novo espaco com conteudos
     espacoConteudo.innerHTML = `
     <h2>Adicionar Alarme:</h2>
-    <div>
+    <div class="container_alarme-btn">
         <input type="time">
         <button id="btn-salvar-alarme">Salvar Alarme</button>
     </div>
@@ -89,12 +96,13 @@ btnAlarme.addEventListener("click", () => {
         }
     });
 });
+
 function atualizarListaAlarmes() {
     //função para mostrar um alarme novo
     if (!alarmesDefinidos)
         return; //se nao tiver alarme volta
     alarmesDefinidos.innerHTML = ""; //limpa alarmes definidos
-    const titulo = document.createElement("p"); //Cria um elemento p
+    const titulo = document.createElement("h2"); //Cria um elemento h2
     titulo.textContent = "Alarmes:"; //Acrescenta o titulo de alarme
     alarmesDefinidos.appendChild(titulo); //E coloca ele no alarme definido
     if (alarmesAdicionados.length === 0) {
@@ -104,12 +112,13 @@ function atualizarListaAlarmes() {
         alarmesDefinidos.appendChild(aviso);
         return;
     }
+
     alarmesAdicionados.forEach((alarme, index) => {
         //Cria uma div para cada alarme feito com o horario e o botao de excluir
         const divAlarme = document.createElement("div");
         divAlarme.textContent = formatarHorario(alarme);
         const btnExcluir = document.createElement("button");
-        btnExcluir.textContent = "Excluir";
+        btnExcluir.textContent = "X";
         btnExcluir.addEventListener("click", () => {
             //Cria um evento de excluir o alarme ao clicar naquela botao
             alarmesAdicionados.splice(index, 1);
@@ -121,6 +130,7 @@ function atualizarListaAlarmes() {
         //Colocam no html
     });
 }
+
 setInterval(() => {
     //Aqui voce esta mandando ele a cada 1 segundo conferir se o horario do relogio bate com cada alarme salvo e se bater ele toca um som
     const agora = new Date();
@@ -138,6 +148,7 @@ setInterval(() => {
         }
     });
 }, 1000);
+
 function formatarHorario(horario24) {
     //Cria uma funcao que recebe uma string e retorna uma string
     if (!formatoAmPm)
@@ -152,9 +163,11 @@ function formatarHorario(horario24) {
         hour12: true, // força o formato am/pm
     }); // retorna uma string formada com metodo toLocaleTimeString
 }
+
 function armazenarAlarme() {
     localStorage.setItem("alarmes", JSON.stringify(alarmesAdicionados));
 }
+
 function recuperarAlarme() {
     const alarmeBruto = localStorage.getItem("alarmes");
     if (alarmeBruto) {
@@ -162,6 +175,8 @@ function recuperarAlarme() {
         atualizarListaAlarmes();
     }
 }
+
+
 //CRONOMETRO
 btnCronometro.addEventListener("click", () => {
     //Adiciona elementos hmtl no hmtl
@@ -169,7 +184,7 @@ btnCronometro.addEventListener("click", () => {
     <div>
         <p id="display"></p>
     </div>
-    <div>
+    <div class="container_btn-cronometro">
         <button id="btn-iniciar">Iniciar</button>
         <button id="btn-pausar">Pausar</button>
         <button id="btn-resetar">Resetar</button>
