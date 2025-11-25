@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/temas.css">
-    <title>Toolbox - Trocar Tema</title>
-</head>
-<body>
-    <header class="cabecalho">
-        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg"  alt="Logo ToolBox"></a>
-    </header>
-    
-    <main class="conteudo">
-        <section><p>Voce quer converter </p>
-            <input type="number" id="input">
-            <p>De:</p>
-            <select id="converter-de">
-                <option value="celsius">Celsius (°C)</option>
-                <option value="kelvin">Kelvin (K)</option>
-                <option value="fahrenheit">Fahrenheit (°F)</option>
-
-                <option value="km">Quilômetro (km)</option>
-                <option value="hm">Hectômetro (hm)</option>
-                <option value="dam">Decâmetro (dam)</option>
-                <option value="m">Metro (m)</option>
-                <option value="dm">Decímetro (dm)</option>
-                <option value="cm">Centímetro (cm)</option>
-                <option value="mm">Milímetro (mm)</option>
-
-                <option value="dia">Dia</option>
-                <option value="hr">Hora (h)</option>
-                <option value="min">Minuto (min)</option>
-                <option value="seg">Segundo (seg)</option>
-
-                <option value="px">Pixels (px)</option>
-                <option value="em">Ems (em)</option>
-                <option value="rem">Rems (rem)</option>
-                <option value="vw">Viewport Width (vw)</option>
-                <option value="vh">Viewport Height (vh)</option>
-            </select>
-            <p>Para:</p>
-            <select id="converter-para">
-                <option value="celsius">Celsius (°C)</option>
-                <option value="kelvin">Kelvin (K)</option>
-                <option value="fahrenheit">Fahrenheit (°F)</option>
-
-                <option value="km">Quilômetro (km)</option>
-                <option value="hm">Hectômetro (hm)</option>
-                <option value="dam">Decâmetro (dam)</option>
-                <option value="m">Metro (m)</option>
-                <option value="dm">Decímetro (dm)</option>
-                <option value="cm">Centímetro (cm)</option>
-                <option value="mm">Milímetro (mm)</option>
-
-                <option value="dia">Dia</option>
-                <option value="hr">Hora (h)</option>
-                <option value="min">Minuto (min)</option>
-                <option value="seg">Segundo (seg)</option>
-                <option value="ms">milíssegundo (ms)</option>
-                
-                <option value="px">Pixels (px)</option>
-                <option value="em">Ems (em)</option>
-                <option value="rem">Rems (rem)</option>
-                <option value="vw">Viewport Width (vw)</option>
-                <option value="vh">Viewport Height (vh)</option>
-            </select>
-
-            <button id="converter-botao">Converter</button>
-            <p id="display"></p>
-
-        </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/conversor.css">
+        <title>Toolbox - Conversor</title>
+    </head> 
+    <body>
+        <header class="cabecalho">
+            <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg"  alt="Logo ToolBox"></a>
+        </header>
         
-    </main>
+        <main class="conteudo">
 
-    <footer class="rodape">
-        <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
-        <div class="rodape__links">
-            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
-            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
-            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
-        </div>
-    </footer>
+            <h1>CONVERSOR</h1>
 
-    <script src="./dist/trocar-temas.js"></script>
-    <script src="./dist/conversor.js"></script>
-</body>
+            <section class="Container">
+
+                <div class="container_converter">
+                    <p>Você quer converter: </p>
+                    <input type="number" id="input">
+                </div>
+                    
+                <div class="container_de">
+                    <p>De:</p>
+
+                    <select id="converter-de">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="hm">Hectômetro (hm)</option>
+                        <option value="dam">Decâmetro (dam)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="mm">Milímetro (mm)</option>
+
+                        <option value="dia">Dia</option>
+                        <option value="hr">Hora (h)</option>
+                        <option value="min">Minuto (min)</option>
+                        <option value="seg">Segundo (seg)</option>
+
+                        <option value="px">Pixels (px)</option>
+                        <option value="em">Ems (em)</option>
+                        <option value="rem">Rems (rem)</option>
+                        <option value="vw">Viewport Width (vw)</option>
+                        <option value="vh">Viewport Height (vh)</option>
+                    </select>
+                </div>
+                
+                <div class="container_para">
+                    <p>Para:</p>
+
+                    <select id="converter-para">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="hm">Hectômetro (hm)</option>
+                        <option value="dam">Decâmetro (dam)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="mm">Milímetro (mm)</option>
+
+                        <option value="dia">Dia</option>
+                        <option value="hr">Hora (h)</option>
+                        <option value="min">Minuto (min)</option>
+                        <option value="seg">Segundo (seg)</option>
+                        <option value="ms">milíssegundo (ms)</option>
+                        
+                        <option value="px">Pixels (px)</option>
+                        <option value="em">Ems (em)</option>
+                        <option value="rem">Rems (rem)</option>
+                        <option value="vw">Viewport Width (vw)</option>
+                        <option value="vh">Viewport Height (vh)</option>
+                    </select>
+                </div>
+
+                <button id="converter-botao">Converter</button>
+
+                <p id="display"></p>
+
+            </section>
+                
+                
+            
+        </main>
+
+        <footer class="rodape">
+            <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
+            <div class="rodape__links">
+                <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
+                <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
+                <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+            </div>
+        </footer>
+
+        <script src="./dist/trocar-temas.js"></script>
+        <script src="./dist/conversor.js"></script>
+    </body>
 </html>

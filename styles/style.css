@@ -115,6 +115,7 @@ main.conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .cabecalho__imagem {
@@ -335,6 +336,8 @@ footer.rodape {
     justify-content: space-between;
     align-items: center;
     padding: 2.5em 4em;
+
+    margin-top: 1rem;
 }
 
 .rodape__direitos {

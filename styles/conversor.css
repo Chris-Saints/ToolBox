@@ -1,0 +1,95 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container_converter{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.container_converter input {
+    border: solid 2px var(--cor-botao-form);
+    border-radius: 6px;
+    height: 25px;
+}
+
+.container_de {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.container_de select {
+    border: solid 2px var(--cor-botao-form);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 30px;
+ 
+}
+
+.container_para {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.container_para select {
+    border: solid 2px var(--cor-botao-form);
+    border-radius: 6px;
+    cursor: pointer;
+    height: 30px;
+}
+
+#converter-botao {
+    background-color: var(--cor-botao-form);
+    border: solid 2px var(--cor-botao-form);
+    color: var(--cor-fonte-form);
+
+    font-weight: bold;
+
+    height: 40px;
+    border-radius: 6px;
+}
+
+#converter-botao:hover {
+    background-color: var(--cor-botao-form-hover);
+
+    color: var(--cor-fonte-form-hover);
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-formulario);
+    color: var(--cor-fonte-form);
+    font-weight: bold;
+    border-radius: 6px;
+    height: 40px;
+}
+
+
+.cabecalho {
+    margin-bottom: 1rem;
+}
+
