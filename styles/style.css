@@ -82,6 +82,10 @@ button {
     cursor: pointer;
 }
 
+strong {
+    font-weight: bold;
+}
+
 html, body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto-principal);
@@ -335,7 +339,7 @@ footer.rodape {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5em 4em;
+    padding: 2em 4em;
 
     margin-top: 1rem;
 }

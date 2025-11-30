@@ -6,6 +6,16 @@ button{
     border: none;
 }
 
+h2 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.slider input {
+    cursor: pointer;
+}
+
 #botao-fundo{
     padding: 60px 55px;
     background-color: var(--cor-primaria);

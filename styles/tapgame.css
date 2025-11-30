@@ -1,5 +1,11 @@
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
 #jogar {
-    margin: 50px;
+    margin-bottom: 20px;
     border: solid 1px var(--cor-primaria);
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -25,6 +31,12 @@
     padding: 20px;
     border-radius: 1em;
     border: solid 1px var(--cor-formulario);
+    margin-bottom: 1rem;
+}
+
+
+#novo-jogo:active {
+    background-color: var(--cor-fonte-form);
 }
 
 #novo-jogo:hover {
@@ -33,13 +45,15 @@
     color: var(--cor-formulario);
 }
 
-#novo-jogo:active {
-    background-color: var(--cor-fonte-form);
-}
-
 #novo-jogo:disabled {
     opacity: 50%;
+    cursor: not-allowed;
 }
+
+#novo-jogo:disabled:hover {
+    cursor: not-allowed;
+}
+
 
 
 .escondido {
@@ -50,16 +64,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 
 #div__contador {
-    margin: 50px;
+    margin: 50px 50px 40px;
     font-size: 40px;
     font-weight: 700;
-    border: solid 2px black;
-    padding: 50px 40px;
-    border-radius: 100%;
 }
 
 #cronometro {
@@ -87,11 +97,15 @@
     font-size: 60px;
 }
 
+.conteudo__conquistas {
+    margin-bottom: 2rem;
+}
+
 
 .conteudo__conquistas-lista{
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 20px;
     gap: 20px;
     font-weight: 600;
     color: var(--cor-primaria);

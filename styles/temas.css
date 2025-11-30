@@ -18,3 +18,14 @@
 .lampada {
     width: 100px;
 }
+
+.div__botao{
+    margin-bottom: 2rem;
+}
+
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}

@@ -1,13 +1,14 @@
-section p{
-    font-size: 30px;
-    font-weight: 700;
+h2{
+    margin-top: 1rem;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .container_principal{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 section span{
@@ -49,4 +50,8 @@ section span{
 
 #display-mensagem {
     font-size: 20px;
+}
+
+#gerar-cor{
+    margin-bottom: 2rem;
 }
