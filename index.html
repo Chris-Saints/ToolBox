@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="cabecalho">
-        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></a>
+        <a href="index.html" data-tooltip="Home" ><img class="cabecalho__imagem" id="imagemAlt" src="./Assets/SimboloAzul.svg" alt="Logo ToolBox"></a>
     </header>
     
     <main class="conteudo">
@@ -35,27 +35,32 @@
             <h2 class="container__ferramentas-titulo">Ferramentas Disponíveis</h2>
             <ul class="container__ferramentas-ul">
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="tapgame.html">Jogo do Clique</a></li>
-                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="formulario.html">Formulário de Cadastro</a></li>
+                <!-- <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="formulario.html">Formulário de Cadastro</a></li> -->
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="temas.html">Trocar Tema (Claro/Escuro)</a></li>
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="tarefas.html">Lista de Tarefas</a></li>
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="jogocor.html">Jogo das Cores</a></li>
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="relogio.html">Relógio Digital</a></li>
-                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="calculadora.html">Calculadora de Soma</a></li>
+                <!-- <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="calculadora.html">Calculadora de Soma</a></li> -->
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="fundo.html">Mudar Cor de Fundo</a></li>
                 <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="editorcss.html">Editor CSS</a></li>
-                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="conversor.html">conversor de medida CSS</a></li>
+                <li class="container__ferramentas-li"><a class="container__ferramentas-botao" href="conversor.html">Conversor de medida CSS</a></li>
             </ul>
         </section>
 
         <section class="container__ideias">
             <h2 class="container__ideias-titulo">Nos ajude a melhorar!</h2>
-            <p class="container__ideias-paragrafo">Caso tenha uma ideia de ferramenta para acrescentar no nosso site. Coloque seu nome e sua ideia abaixo!</p>
+            <p class="container__ideias-paragrafo">Caso tenha uma idéia de ferramenta para acrescentar ao nosso site. Coloque seu nome e sua idéia abaixo!</p>
 
             <form class="container__ideias-formulario" id="formulario">
-                <label class="container__ideias-input"> Nome: <input class="input-nome" type="text" id="nome" placeholder="Usuario"></label><br>
-                <label for="descricao" class="container__ideias-input-descricao"> Descrição: <textarea id="descricao" class="input-descricao" cols="50" rows="10" wrap="hard" placeholder="Descreva sua ideia"></textarea></label><br>
+                <label class="container__ideias-input"> Nome: 
+                    <input class="input-nome" type="text" id="nome" placeholder="Usuario" required/>
+                </label><br>
+
+                <label for="descricao" class="container__ideias-input-descricao"> Descrição: 
+                    <textarea id="descricao" class="input-descricao" cols="50" rows="10" wrap="hard" placeholder="Descreva sua ideia" required></textarea>
+                </label><br>
                  
-                <button data-tooltip="Clique para enviar" class="container__ideias-botao" type="submit">Enviar</button>
+                <button id="submitForm" data-tooltip="Clique para enviar" class="container__ideias-botao" type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -65,11 +70,14 @@
     <footer class="rodape">
         <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
         <div class="rodape__links">
-            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
-            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
-            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+            <a data-tooltip="Instagram" href="https://www.instagram.com/picolisev/?igsh=MTVwdXZhNjI4cnY4cQ%3D%3D"><img id="instaimg" src="./Assets/Instagram_Glyph_White.svg" alt="Logo Instagram"></a>
+
+            <a data-tooltip="Github" href="https://github.com/Chris-Saints"><img id="gitimg" src="./Assets/github-mark-white.svg" alt="Logo Github"></a>
+
+            <a  data-tooltip="LinkedIn" href="https://www.linkedin.com/in/christian-picoli-961897344"><img id="linkimg" src="./Assets/InBug-White.png" alt="Logo LinkedIn"></a>
         </div>
     </footer>
     <script src="./dist/trocar-temas.js"></script>
+    <script src="./dist/submit.js"></script>
 </body>
 </html>

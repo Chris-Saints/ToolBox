@@ -1,35 +1,3 @@
-const btnMostrarLogin = document.getElementById("para-login");
-const btnMostraCadastro = document.getElementById("para-cadastro");
-const formLogin = document.getElementById("form-login");
-const formCadastro = document.getElementById("form-cadastro");
-formLogin.classList.remove("hidden");
-formCadastro.classList.add("hidden");
-btnMostrarLogin.addEventListener("click", () => mostrarFomularios(false));
-btnMostraCadastro.addEventListener("click", () => mostrarFomularios(true));
-function mostrarFomularios(mostrarCadastro) {
-    if (mostrarCadastro) {
-        formCadastro.classList.remove("hidden");
-        formLogin.classList.add("hidden");
-        formLogin.querySelectorAll("[required]").forEach(input => {
-            input.removeAttribute("required");
-        });
-        formCadastro.querySelectorAll("input").forEach(input => {
-            if (input.id !== "")
-                input.setAttribute("required", "");
-        });
-    }
-    else {
-        formLogin.classList.remove("hidden");
-        formCadastro.classList.add("hidden");
-        formCadastro.querySelectorAll("[required]").forEach(input => {
-            input.removeAttribute("required");
-        });
-        formLogin.querySelectorAll("input").forEach(input => {
-            if (input.id !== "")
-                input.setAttribute("required", "");
-        });
-    }
-}
 export function gerarSenhaAleatoria(tamanho) {
     const caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+"; //Cria uma variavel com todos os caracteres 
     let senha = ""; //Cria uma let que vai guardar multiplas senhas aleatorias
@@ -62,7 +30,7 @@ export function validarEmail(email) {
 export function mostrarSenha(input, botao) {
     if (input.type === "password") {
         input.type = "text";
-        botao.textContent = "Fechar";
+        botao.textContent = "fechar";
     }
     else {
         input.type = "password";

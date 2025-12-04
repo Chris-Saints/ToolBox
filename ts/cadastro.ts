@@ -16,7 +16,7 @@ inputSenha.addEventListener("input", () => {
     const forca = avaliarSenha(inputSenha.value);
     forcaSenha.textContent = `Senha ${forca}`;
 });
-
+ 
 btnOlhos.addEventListener("click", () => {
     mostrarSenha(inputSenha, btnOlhos);
 });

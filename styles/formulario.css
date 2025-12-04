@@ -1,7 +1,8 @@
 .conteudo {
     display: flex;
-    flex-direction: column;
-    gap: 10rem;
+    flex-direction: column; 
+
+    margin: auto 0;
     
 }
 
@@ -21,12 +22,16 @@
     display: none;
 }
 
+.hidden2{
+    display: none !important;
+}
+
 .container__login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -5rem;
+    margin-top: 5rem;
 
 }
 

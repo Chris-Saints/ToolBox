@@ -16,9 +16,11 @@ if(botaoTema) {
         ? "../Assets/light_mode.svg"
         : "../Assets/dark_mode.svg";
 
-        iconCabecalho.src = temaEscuroAtivo
-        ? "../Assets/SimboloAmarelo.svg"
-        : "../Assets/SimboloAzul.svg";
+        if(iconCabecalho) {
+            iconCabecalho.src = temaEscuroAtivo
+            ? "../Assets/SimboloAmarelo.svg"
+            : "../Assets/SimboloAzul.svg";
+        }
 
         if(iconPrincipal) {
             iconPrincipal.src = temaEscuroAtivo
@@ -27,16 +29,16 @@ if(botaoTema) {
         }
 
         gitEscuro.src = temaEscuroAtivo
-        ? "../Assets/github-escuro.svg"
-        : "../Assets/Github Negative.svg";
+        ? "../Assets/github-mark.png"
+        : "../Assets/github-mark-white.svg";
 
         instaEscuro.src = temaEscuroAtivo
-        ? "../Assets/instagram-escuro.svg"
-        : "../Assets/Instagram Negative.svg";
+        ? "../Assets/Instagram_Glyph_Black.svg"
+        : "../Assets/Instagram_Glyph_White.svg";
 
         LinkEscuro.src = temaEscuroAtivo
-        ? "../Assets/linkedin-escuro.svg"
-        : "../Assets/Linkedin Negative.svg";
+        ? "../Assets/InBug-Black.png"
+        : "../Assets/InBug-White.png";
         
         localStorage.setItem("tema", temaEscuroAtivo ? "escuro" : "claro"); //Salva a informação do Tema
     });
@@ -53,14 +55,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (temaSalvo === "escuro") {
         body.classList.add("tema-escuro"); // Adiciona a classe do tema escuro
-        lampada.src = "../Assets/light_mode.svg";// Altera o texto do botão
-        iconCabecalho.src = "../Assets/SimboloAmarelo.svg";
+        if(lampada) {
+            lampada.src = "../Assets/light_mode.svg"; // Altera o texto do botão
+        }
+
+        if(iconCabecalho) {
+            iconCabecalho.src = "../Assets/SimboloAmarelo.svg";
+        }
+        
+
         if(iconPrincipal) {
             iconPrincipal.src = "../Assets/SimboloAmarelo.svg";
         }
-        gitEscuro.src = "../Assets/github-escuro.svg";
-        instaEscuro.src = "../Assets/instagram-escuro.svg";
-        LinkEscuro.src = "../Assets/linkedin-escuro.svg";
+
+        gitEscuro.src = "../Assets/github-mark.png";
+        instaEscuro.src = "../Assets/Instagram_Glyph_Black.svg";
+        LinkEscuro.src = "../Assets/InBug-Black.png";
+
     } else {
         if (lampada) {
             lampada.src = "../Assets/dark_mode.svg"; // Se não houver tema salvo, o botão é configurado para mudar para o tema escuro

@@ -16,7 +16,7 @@
     gap: 1rem;
 }
 
-.container_converter{
+.container_converter{ 
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -60,9 +60,9 @@
 }
 
 #converter-botao {
-    background-color: var(--cor-botao-form);
-    border: solid 2px var(--cor-botao-form);
-    color: var(--cor-fonte-form);
+    background-color: var(--cor-primaria);
+    border: solid 2px var(--cor-primaria);
+    color: var(--cor-secundaria);
 
     font-weight: bold;
 
@@ -71,9 +71,9 @@
 }
 
 #converter-botao:hover {
-    background-color: var(--cor-botao-form-hover);
+    background-color: var(--cor-secundaria);
 
-    color: var(--cor-fonte-form-hover);
+    color: var(--cor-primaria);
 }
 
 #display {
@@ -82,7 +82,7 @@
     justify-content: center;
 
     background-color: var(--cor-formulario);
-    color: var(--cor-fonte-form);
+    color: var(--cor-secundaria);
     font-weight: bold;
     border-radius: 6px;
     height: 40px;

@@ -1,6 +1,5 @@
 //@ts-ignore
-import * as math from 'mathjs';
-const { evaluate } = math;
+import { evaluate } from mathjs;
 const display = document.getElementById("display");
 const numeros = document.querySelectorAll(".btn");
 const btnEqual = document.getElementById("btnEqual");

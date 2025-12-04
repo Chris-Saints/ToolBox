@@ -14,56 +14,62 @@
     </header>
     
     <main class="conteudo">
+
         <h1>LOGIN E CADASTRO</h1>
-        <form class="container__login" id="form-login">
-            <div class="container_login-input">
-                <label for="email-login">E-mail:</label>
-                <input name= "email" type="email" id="email-login" autocomplete="off" placeholder="Digite seu Email" required>
+
+        <section id="sectionLogin">
+            <form class="container__login " id="form-login">
+                <div class="container_login-input">
+                    <label for="email-login">E-mail:</label>
+                    <input name= "email" type="email" id="email-login" autocomplete="off" placeholder="Digite seu Email" required>
+
+                    <label for="password">Senha:</label>
+                    <input name="password" type="password" minlength="6" autocomplete="off" id="password-login" placeholder="Digite sua senha" required>
+                    <button type="button" id="btn-olhos-login"><img src="./Assets/eye.png" alt="Olhos"></button>
+                </div>
+                
+                <div class="container_button-login">
+                    <button id="btn-login">Entrar</button>
+
+                    <button type="button" id="para-cadastro">Cadastrar</button>
+                </div>
+            </form>
+            
+
+            <form class="container__cadastro" id="form-cadastro">
+                <label for="nome">Nome:</label>
+                <input name="nome" type="text" id="nome" autocomplete="off" placeholder="Digite seu nome completo" required>
+
+                <label for="email-cad">E-mail:</label>
+                <input name="email" type="email" id="email-cad" autocomplete="off" placeholder="Digite seu Email" required>
 
                 <label for="password">Senha:</label>
-                <input name="password" type="password" minlength="6" autocomplete="off" id="password-login" placeholder="Digite sua senha" required>
-                <button type="button" id="btn-olhos-login"><img src="./Assets/eye.png" alt="Olhos"></button>
-            </div>
-            
-            <div class="container_button-login">
-                <button id="btn-login">Entrar</button>
+                <input name="password" type="password" minlength="6" autocomplete="off" id="password" placeholder="Digite sua senha" required>
 
-                <button type="button" id="para-cadastro">Cadastrar</button>
-            </div>
-        </form>
+                <button type="button" id="btn-olhos">Olhos</button>
+                <button type="button" id="btn-senha-aleatoria">Gerar senha aleatoria</button>
+
+                <span id="forca-senha"></span>
+
+                <div>
+                    <span id="dica-caracter">Minimo de 6 caracteres</span>
+                    <span id="dica-maiuscula">Letras Maiúsculas</span>
+                    <span id="dica-minuscula">Letras Minúsculas</span>
+                    <span id="dica-numero">Números</span>
+                    <span id="dica-simbolo">Simbolos</span>
+                </div>
+
+                <label for="confirm-password">Confirme sua Senha:</label>
+                <input name="vpassword" type="password" id="confirm-password" autocomplete="off" placeholder="Confirme sua senha" required>
+                <button type="button" id="btn-olhos-val">Olhos</button>
+
+                <button type="submit" id="btn-submit">Cadastrar</button>
+
+                <button type="button" id="para-login">Login</button>
+            </form>
+
+        </section>
         
-
-        <form class="container__cadastro" id="form-cadastro">
-            <label for="nome">Nome:</label>
-            <input name="nome" type="text" id="nome" autocomplete="off" placeholder="Digite seu nome completo" required>
-
-            <label for="email-cad">E-mail:</label>
-            <input name="email" type="email" id="email-cad" autocomplete="off" placeholder="Digite seu Email" required>
-
-            <label for="password">Senha:</label>
-            <input name="password" type="password" minlength="6" autocomplete="off" id="password" placeholder="Digite sua senha" required>
-
-            <button type="button" id="btn-olhos">Olhos</button>
-            <button type="button" id="btn-senha-aleatoria">Gerar senha aleatoria</button>
-
-            <span id="forca-senha"></span>
-
-            <div>
-                <span id="dica-caracter">Minimo de 6 caracteres</span>
-                <span id="dica-maiuscula">Letras Maiúsculas</span>
-                <span id="dica-minuscula">Letras Minúsculas</span>
-                <span id="dica-numero">Números</span>
-                <span id="dica-simbolo">Simbolos</span>
-            </div>
-
-            <label for="confirm-password">Confirme sua Senha:</label>
-            <input name="vpassword" type="password" id="confirm-password" autocomplete="off" placeholder="Confirme sua senha" required>
-            <button type="button" id="btn-olhos-val">Olhos</button>
-
-            <button type="submit" id="btn-submit">Cadastrar</button>
-
-            <button type="button" id="para-login">Login</button>
-        </form>
 
         <section id="area-logada" class="hidden">
             <img src="./Assets/UserAzul.svg" alt="Usuario">
@@ -73,12 +79,14 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape"> 
         <p class="rodape__direitos">&copy;Christian Picoli.Todos os direitos reservados.</p>
         <div class="rodape__links">
-            <a data-tooltip="Instagram" id="instaimg" href="#"><img src="./Assets/Instagram Negative.svg" alt="Logo Instagram"></a>
-            <a data-tooltip="Github" id="gitimg" href="#"><img src="./Assets/Github Negative.svg" alt="Logo Github"></a>
-            <a  data-tooltip="LinkedIn" id="linkimg" href="#"><img src="./Assets/LinkedIn Negative.svg" alt="Logo LinkedIn"></a>
+            <a data-tooltip="Instagram" href="https://www.instagram.com/picolisev/?igsh=MTVwdXZhNjI4cnY4cQ%3D%3D"><img id="instaimg" src="./Assets/Instagram_Glyph_White.svg" alt="Logo Instagram"></a>
+
+            <a data-tooltip="Github" href="https://github.com/Chris-Saints"><img id="gitimg" src="./Assets/github-mark-white.svg" alt="Logo Github"></a>
+
+            <a  data-tooltip="LinkedIn" href="https://www.linkedin.com/in/christian-picoli-961897344"><img id="linkimg" src="./Assets/InBug-White.png" alt="Logo LinkedIn"></a>
         </div>
     </footer>
 
